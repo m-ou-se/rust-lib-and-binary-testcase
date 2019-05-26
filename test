@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+cd "$(dirname "$0")"
+cargo build
+gcc run.c -o target/run -ldl
+echo
+echo "-> Loading and running foo() from the cdylib..."
+echo
+./target/run target/debug/libloadme.so
+echo
+echo "-> Loading and running foo() from the binary..."
+echo
+./target/run target/debug/loadme

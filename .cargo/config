@@ -1,0 +1,4 @@
+[target.'cfg(unix)']
+rustflags = [
+	"-Clink-arg=-Wl,--export-dynamic",
+]
