@@ -7,10 +7,6 @@ edition = "2018"
 name = "loadme"
 path = "src/loadme.rs"
 
-[[bin]]
-name = "run"
-path = "src/run.rs"
-
 [lib]
 crate-type = ["cdylib"]
 name = "loadme"
