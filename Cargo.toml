@@ -12,5 +12,5 @@ crate-type = ["cdylib"]
 name = "loadme"
 path = "src/loadme.rs"
 
-[dependencies]
+[dev-dependencies]
 libc = "0.2.55"
